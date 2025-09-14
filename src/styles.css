@@ -1,0 +1,31 @@
+
+:root{
+  --primary:#4b0082; --accent:#ff4f8b; --bg:#fbf7ff; --card:#fff; --muted:#6b6b6b;
+  --success:#2aa876; font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+}
+
+html,body{height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#fff);}
+
+.wrap{max-width:1040px; margin:20px auto; padding:18px;}
+
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--primary),#6a2dad);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+h1{margin:0;color:var(--primary)}
+.meta{color:var(--muted);font-size:13px}
+.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 10px 30px rgba(66,43,120,.05)}
+.row{display:flex;gap:12px;align-items:center}
+.btn{padding:8px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-ghost{background:#fff;border:1px solid #eee;color:var(--primary)}
+label{display:block;margin:8px 0 6px;font-weight:700;color:var(--primary)}
+input[type=text],input[type=password],textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e7e7ef;font-size:14px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+.hidden{display:none}
+.nav{display:flex;gap:8px;align-items:center}
+.list{display:grid;gap:10px}
+.student-card{padding:12px;border-radius:10px;border:1px solid #f0f0f4;background:#fff}
+.small{font-size:13px;color:var(--muted)}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px;border-bottom:1px solid #f3f3f6;text-align:left}
+.feedback{background:#f8f6ff;border-radius:8px;padding:8px}
+@media (max-width:700px){.row{flex-direction:column;align-items:stretch}}
